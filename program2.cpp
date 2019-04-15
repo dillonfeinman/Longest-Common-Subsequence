@@ -71,7 +71,7 @@ int main(int argc, char * argv[]){ //main requires 3 args (other than ./program)
     outfile << lcs_len << endl; //write length to outfile
     outfile << time.count() << " microseconds."; //write elapsed time
   } else {
-    cerr << "Could not write to file: " << outfile << "." << endl;
+    cerr << "Could not write to file: " << out << "." << endl;
     cerr << "Exiting." <<endl;
     exit(1);
   }

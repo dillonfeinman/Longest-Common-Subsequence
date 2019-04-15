@@ -78,7 +78,7 @@ void printLCS(string linex, string liney, int m, int n, string out){
     outfile << time.count() << " microseconds."; //write elapsed time
     outfile.close();
   }else {
-    cerr << "Could not write to file: " << outfile << "." << endl;
+    cerr << "Could not write to file: " << out << "." << endl;
     cerr << "Exiting." <<endl;
     exit(1);
   }
@@ -99,7 +99,7 @@ void printLCSOver(string linex, string liney, int m, int n, string out){
     outfile.close();
   }
   else {
-    cerr << "Could not write to file: " << outfile << "." << endl;
+    cerr << "Could not write to file: " << out << "." << endl;
     cerr << "Exiting." <<endl;
     exit(1);
   }
